@@ -16,8 +16,9 @@ import time
 
 # Soft ceiling on live keys. Expired entries are reclaimed lazily on access;
 # this bound stops a long-running server from growing without limit when many
-# distinct keys are written and never read again.
-_MAX_KEYS = 50_000
+# distinct keys are written and never read again. Kept modest since a local tool
+# gains nothing from caching tens of thousands of distinct pages in one run.
+_MAX_KEYS = 10_000
 
 
 class _InMemoryStore:
