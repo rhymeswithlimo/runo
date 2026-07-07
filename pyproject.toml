@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "runo"
+version = "1.0.0"
+description = "Extract structured, typed JSON from any URL using a schema you define — powered by Google Gemini."
+requires-python = ">=3.11"
+readme = "README.md"
+dependencies = [
+    "fastapi==0.135.3",
+    "uvicorn[standard]==0.44.0",
+    "httpx==0.28.1",
+    "playwright==1.58.0",
+    "playwright-stealth==2.0.3",
+    "trafilatura==2.0.0",
+    "beautifulsoup4==4.14.3",
+    "lxml==6.0.4",
+    "extruct==0.18.0",
+    "h2==4.3.0",
+    "rank-bm25==0.2.2",
+    "google-genai==1.70.0",
+    "pydantic==2.12.5",
+    "pydantic-settings==2.13.1",
+    "python-dotenv==1.2.2",
+    "python-dateutil==2.9.0.post0",
+]
+
+[project.optional-dependencies]
+# TLS-impersonating HTTP client (T1 plain-fetch path). Optional — the fetcher
+# falls back to httpx if curl_cffi is not installed.
+tls = [
+    "curl_cffi==0.7.4",
+]
+# CDP-leak-patched Playwright fork (T2 headless). Optional — falls back to
+# vanilla playwright if patchright is not installed.
+patchright = [
+    "patchright==1.48.0",
+]
+
+[project.scripts]
+runo = "runo.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["runo"]
