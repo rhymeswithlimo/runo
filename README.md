@@ -4,6 +4,15 @@
 
 <h1 align="center">Runo</h1>
 
+<p align="center">
+  English ·
+  <a href="README.zh-CN.md">简体中文</a> ·
+  <a href="README.es.md">Español</a> ·
+  <a href="README.fr.md">Français</a> ·
+  <a href="README.de.md">Deutsch</a> ·
+  <a href="README.ja.md">日本語</a>
+</p>
+
 <p align="center">Extract structured, typed JSON from any URL using a schema you define.</p>
 
 <p align="center">
@@ -15,7 +24,7 @@
 
 > [!NOTE]
 > I'm a sole maintainer on this project.
-> I built it and open-sourced it so anyone can run it locally :).
+> It started as a closed-source SaaS ([scrapewithruno.com](https://scrapewithruno.com)), but I decided to open-source it :).
 
 ---
 
