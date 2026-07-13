@@ -32,7 +32,7 @@ Describes lo que quieres (un nombre de campo, un tipo, un valor de ejemplo) y Ru
 
 Sin selectores, sin XPath, nada que mantener. Como el LLM lee por significado en lugar de por posición en el DOM, tu esquema no se rompe la próxima vez que alguien rediseñe el sitio. Un campo que no se encuentre vuelve como `null` en lugar de simplemente desaparecer.
 
-Esta es la versión de código abierto que ejecutas tú mismo. Necesitarás una clave de API de Google Gemini, ese es el único requisito principal.
+Esta es una versión de código abierto que ejecutas tú mismo. Necesitarás una clave de API de Google Gemini, ese es el único requisito principal.
 
 - **Salida tipada**: cadenas, enteros, decimales, booleanos, fechas ISO 8601 y arreglos tipados, todo convertido estrictamente.
 - **Esquema sencillo**: nombre, tipo, ejemplo. Sin ningún DSL.

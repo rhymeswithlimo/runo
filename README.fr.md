@@ -32,7 +32,7 @@ Vous décrivez ce que vous voulez (un nom de champ, un type, une valeur d'exempl
 
 Pas de sélecteurs, pas de XPath, rien à maintenir. Comme le LLM lit selon le sens plutôt que selon la position dans le DOM, votre schéma ne casse pas la prochaine fois que quelqu'un refond le site. Un champ introuvable revient à `null` au lieu de simplement disparaître.
 
-Ceci est la version open source que vous exécutez vous-même. Il vous faudra une clé d'API Google Gemini, c'est la seule vraie exigence.
+Ceci est une version open source que vous exécutez vous-même. Il vous faudra une clé d'API Google Gemini, c'est la seule vraie exigence.
 
 - **Sortie typée** : chaînes, entiers, flottants, booléens, dates ISO 8601 et tableaux typés, tout converti strictement.
 - **Schéma simple** : nom, type, exemple. Aucun DSL.

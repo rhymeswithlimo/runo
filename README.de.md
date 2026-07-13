@@ -32,7 +32,7 @@ Du beschreibst, was du willst (einen Feldnamen, einen Typ, einen Beispielwert), 
 
 Keine Selektoren, kein XPath, nichts zu warten. Da das LLM nach Bedeutung statt nach DOM-Position liest, bricht dein Schema nicht, wenn jemand die Website neu gestaltet. Ein Feld, das nicht gefunden wird, kommt als `null` zurück, statt einfach zu verschwinden.
 
-Dies ist die Open-Source-Version, die du selbst betreibst. Du brauchst einen Google-Gemini-API-Schlüssel, das ist die einzige wesentliche Voraussetzung.
+Dies ist eine Open-Source-Version, die du selbst betreibst. Du brauchst einen Google-Gemini-API-Schlüssel, das ist die einzige wesentliche Voraussetzung.
 
 - **Typisierte Ausgabe**: Strings, Ganzzahlen, Fließkommazahlen, Booleans, ISO-8601-Daten und typisierte Arrays, alles streng umgewandelt.
 - **Einfaches Schema**: Name, Typ, Beispiel. Keine DSL.

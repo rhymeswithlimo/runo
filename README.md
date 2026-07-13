@@ -32,7 +32,7 @@ You describe what you want (a field name, a type, an example value) and Runo fet
  
 No selectors, no XPath, nothing to maintain. Since the LLM reads for meaning instead of DOM position, your schema doesn't break the next time someone redesigns the site. A field it can't find comes back `null` instead of just vanishing.
  
-This is the open-source build you run yourself. You'll need a Google Gemini API key, that's the only main requirement.
+This is an open-source build you run yourself. You'll need a Google Gemini API key, that's the only main requirement.
  
 - **Typed output**: strings, ints, floats, booleans, ISO 8601 dates, typed arrays, all coerced strictly.
 - **Plain schema**: name, type, example. No DSL.
